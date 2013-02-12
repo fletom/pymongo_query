@@ -1,10 +1,12 @@
-# Mongo Query
+# PyMongo Query
 
 
-A lightweight library that overloads several operators to make writing PyMongo-compatible MongoDB queries a lot nicer.
+PyMongo Query is a tiny library that overloads several operators to make writing PyMongo-compatible MongoDB queries a lot nicer.
 
 ## Usage
-	
+
+You can do:
+
 	>>> User.find((k('username') == 'fletom') | (k('name').starts_with('Fletcher')))
 	...
 	>>> User.find(k('reputation') > 10)
