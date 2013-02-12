@@ -1,11 +1,10 @@
 import re
 
+
 class mongo_query(dict):
-	def __init__(self, query):
-		dict.__init__(self, query)
 
 	def __and__(self, other):
-		return mongo_query(dict(list(self.items()) + list(other.items())))
+		return mongo_query(list(self.items()) + list(other.items()))
 
 	def __or__(self, other):
 		return mongo_query({'$or': [self, other]})
