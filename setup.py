@@ -1,9 +1,9 @@
 from distutils.core import setup
 
 setup(
-	name = 'mongo_query',
+	name = 'pymongo_query',
 	version = '0.1.0',
-	packages = [ 'pymongo_query.mongo_query' ],
+	packages = [ 'pymongo_query' ],
 	url = 'https://github.com/fletom/pymongo_query',
 	license = '',
 	author = 'fletcher',
